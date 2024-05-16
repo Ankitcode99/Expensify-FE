@@ -1,12 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.edit-btn, .delete-btn{
+    border: 2px solid black;
+    background-color: white;
+    /* font-weight: bold; */
+    text-transform: none;
+    font-size: 1em;
+  }
+  
+  .edit-btn:hover {
+    background-color: rgb(75, 157, 238);
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: red;
+    color:white;
+  }
+  

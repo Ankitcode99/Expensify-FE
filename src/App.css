@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+* {
+  font-family: Roboto, sans-serif;  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  /* display: flex; */
+  overflow: hidden ;
+  scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-page {
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.auth-card {
+  border: 2px solid black;
+  background-color: rgb(244, 244, 244);
+  border-radius: 20px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-name{
+  width: 50%;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.expense-page{
+  height: 100vh;
+  width: 100vw;
+}
+.expense-form-comp {
+  height: 100%;
+  display: flex;
+}
+
+#expense-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+.expense-card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(227, 233, 238);
+  width: 60%;
+  border: 2px solid black;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  align-items: center;
+}
+#total-expense {
+  display: flex;
+  width: 40%;
+  background-color: aqua;
+  flex-direction: column;
+  align-items: center;
+}
+
+#expense-table-comp {
+  background-color: aliceblue;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+#group-expense-table {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+#group-expense-table th, #group-expense-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#group-expense-table th {
+  background-color: #38adf5;
+  font-weight: bold;
+}
+
+#group-expense-table tr:nth-child(even) {
+  background-color: #9fd2ea;
+}
+
+#group-expense-table tr:hover {
+  background-color: #1d94b8;
 }
